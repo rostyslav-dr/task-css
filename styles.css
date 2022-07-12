@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+#header{
+  position: fixed;
+  background-color: #eee;
+  max-height: 75px;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header__img {
+  width: 300px;
+  height: 35px;
+}
+
+#list-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+}
+
+#nav-bar li{
+    list-style: none;
+}
+
+#nav-bar a{
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  color: #000;
+}
+
+
+.heading-land{
+    background-color: #eee;
+    display: flex;
+    padding-top: 70px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+  }
+
+  .heading-land{
+    font-family: 'Lato', sans-serif;
+  }
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #email {
+    width: 270px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  #submit {
+    background-color: #f1c40f;
+    width: 150px;
+    height: 30px;
+    border: 0;
+    font-family: 'Lato';
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
+  .material-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+  }
+
+
+.premium {
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.shipping {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
+.quality_as {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+#video {
+    margin-top: 30px;
+    width: 560px;
+    height: 315px;
+    border: 1px solid #000;
+}
+
+
+#pricing-menu {
+    padding-top: 20px;
+    background-color: #eee;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-rows: 300px;
+    grid-column-gap: 20px;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+.first-pricing-info{
+    grid-column: 1;
+}
+
+.second-pricing-info {
+    grid-column: 2;
+}
+
+.third-pricing-info {
+    grid-column: 3;
+}
+
+.price-box {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-box h{
+    text-transform: uppercase;
+}
+
+.heading-color{
+    background-color: #ddd;
+    width: 100%;
+}
+
+.price-detail{
+    font-weight: bold;
+}
+
+.pricing-text{
+    max-width: 300px;
+    text-align: center;
+}
+
+.select-button {
+    margin-top: 40px;
+    background-color: #f1c40f;
+    height: 40px;
+    width: 100px;
+    border: 0;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.uppercase-heading {
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 320px){
+    #header{
+        width: 280px;
+        max-height: 60px;
+    }
+    #nav-link{
+        display: none;
+    }
+    #header-img{
+        width: 100%;
+        height: auto;
+    }
+    .heading-land{
+        height: 280px;
+    }
+    .icon{
+        margin-left: 10px;
+    }
+    .premium{
+        margin-right: 35px;
+    }
+    .shipping {
+        margin-right: 15px;
+    }
+    .quality_as{
+        margin-right: 15px;
+    }
+    .orchestra-vid{
+        width: 100%;
+        height: auto;
+    }
+    #pricing-menu {
+        width: 330px;
+        grid-template-rows: auto;
+        justify-content: center;
+        grid-template-columns: auto;
+        row-gap: 15px;
+    }
+    .first-pricing-info{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .second-pricing-info{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .third-pricing-info{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .select-button{
+        margin-bottom: 10px;
+    }
+    .footer{
+        width: 320px;
+    }
+}
+
+
+@media (max-width: 600px){
+    #list-content{
+        gap: 55px;
+    }
+    .premium{
+        gap: 60px;
+    }
+    .shipping{
+        gap: 50px;
+    }
+    .quality_as{
+        gap: 35px;
+    }
+    .icon{
+        margin-left: 35px;
+    }
+     }
